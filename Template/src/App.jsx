@@ -1,10 +1,12 @@
-import { useState } from "react";
+import React from "react";
 import Navigationbar from "./components/Navigationbar";
 
 function App() {
   return (
     <>
-      <Navigationbar />
+      <div className="overflow-x-hidden">
+        <Navigationbar />
+      </div>
     </>
   );
 }

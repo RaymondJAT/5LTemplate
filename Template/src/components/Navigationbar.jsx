@@ -1,12 +1,15 @@
 import React from "react";
+import { NavbarLinks } from "../Data/data";
 
 const Navigationbar = () => {
   return (
-    <div>
-      <h1 className="text-6xl font-bold text-center text-blue-400 bg-red-500">
-        New React Project
-      </h1>
-    </div>
+    <nav>
+      <div className="container-custom">
+        <div>
+          <p>testing</p>
+        </div>
+      </div>
+    </nav>
   );
 };
 
