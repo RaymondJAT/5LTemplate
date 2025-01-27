@@ -1,12 +1,16 @@
-import React from "react";
-import { NavbarLinks } from "../Data/data";
+import React, { useState } from "react";
+import { NavbarLinks } from "../../Data/data";
+import ResponsiveMenu from "./ResponsiveMenu";
 
-import logo from "../assets/5L_logo-Red.png";
+import logo from "../../assets/5L_logo-Red.png";
+import { IoMenuSharp } from "react-icons/io5";
 
 const Navigationbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
-      <nav className="bg-red-100">
+      <nav className="bg-slate-100">
         <div className="container flex justify-between items-center py-8">
           {/* Logo */}
           <div className="text-2xl flex items-center gap-2 font-bold">
@@ -35,6 +39,14 @@ const Navigationbar = () => {
               })}
             </ul>
           </div>
+          {/* Dropdown Menu */}
+          <div className="md:hidden" onClick={() => setOpen(!open)}>
+            <IoMenuSharp className="text-3xl text-primary cursor-pointer" />
+          </div>
+        </div>
+        {/* Responsive Menu */}
+        <div>
+          <ResponsiveMenu open={open} setOpen={setOpen} />
         </div>
       </nav>
     </>
