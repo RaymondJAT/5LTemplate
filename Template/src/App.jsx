@@ -1,6 +1,7 @@
 import React from "react";
 import Navigationbar from "./components/NavBar/Navigationbar";
 import About from "./components/About";
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="overflow-x-hidden">
         <Navigationbar />
         <About />
+        <Services />
       </div>
     </>
   );
