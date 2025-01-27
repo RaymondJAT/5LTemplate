@@ -25,9 +25,10 @@ const ResponsiveMenu = ({ open, setOpen }) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.3 }}
-          className="absolute top-20 left-0 w-full h-screen z-20"
+          className="absolute top-23 left-0 w-full h-screen z-20  "
         >
-          <div className="text-md font-semibold  bg-primary text-black py-10 m-6 rounded-3xl">
+          {/* Links */}
+          <div className=" text-md font-semibold  bg-primary text-black py-10 m-6 rounded-3xl">
             <ul className="flex flex-col justify-center items-center gap-4">
               {NavbarLinks.map((item) => {
                 return (
