@@ -1,15 +1,43 @@
 import React from "react";
 import { NavbarLinks } from "../Data/data";
 
+import logo from "../assets/5L_logo-Red.png";
+
 const Navigationbar = () => {
   return (
-    <nav>
-      <div className="container-custom">
-        <div>
-          <p>testing</p>
+    <>
+      <nav className="bg-red-100">
+        <div className="container flex justify-between items-center py-8">
+          {/* Logo */}
+          <div className="text-2xl flex items-center gap-2 font-bold">
+            <a href="/">
+              <img
+                src={logo}
+                alt="5L Solutions logo"
+                className="cursor-pointer w-48 md:w-40 sm:w-36"
+              />
+            </a>
+          </div>
+          {/* Menu */}
+          <div className="hidden md:block">
+            <ul className="flex items-center gap-6">
+              {NavbarLinks.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <a
+                      href={item.path}
+                      className="text-md inline-block py-1 px-3 hover:text-primary duration-200"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 

@@ -7,21 +7,21 @@ export const NavbarLinks = [
   {
     id: 2,
     title: "About Us",
-    path: "#",
+    path: "about",
   },
   {
     id: 3,
     title: "Producs",
-    path: "#",
+    path: "product",
   },
   {
     id: 4,
     title: "Services",
-    path: "#",
+    path: "service",
   },
   {
     id: 5,
-    title: "Get In Touch",
-    path: "#",
+    title: "Inquire",
+    path: "contact",
   },
 ];
