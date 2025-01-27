@@ -7,13 +7,14 @@ const About = () => {
   return (
     <>
       <section>
-        <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative border border-solid border-amber-300">
-          <div className="flex flex-col justify-center py-14 md:py-0">
-            <div className="text-center px-10 md:text-left space-y-6 border border-blue-500">
-              <h1 className="text-3xl lg:text-4xl font-bold leading-relaxed lg:leading-normal py-1">
+        <div className="container py-2 gap-x-2 grid grid-cols-1 md:grid-cols-2 min-h-[450px] relative border border-solid border-amber-300">
+          {/* Text Box */}
+          <div className="flex flex-col justify-center w-full p-4 md:p-6 border border-blue-500 bg-gray-50">
+            <div className="space-y-4 text-center md:text-left">
+              <h1 className="text-2xl lg:text-3xl font-bold leading-relaxed lg:leading-normal">
                 What is{" "}
                 <span className="text-primary">
-                  5L SOLUTIONS SUPPLY & ALLIED SERVICE CORP.
+                  5L Solutions Supply & Allied Service Corp.
                 </span>
                 ?{" "}
               </h1>
@@ -24,23 +25,26 @@ const About = () => {
                 industries. The company also designs, installs, and repairs
                 electronic and electrical systems, including CCTV, cabling, air
                 conditioning, and security systems, tailored to meet
-                customer-specific requirements
+                customer-specific requirements.
               </p>
-
-              {/* button */}
-              <div className="text-primary flex gap-8 ">
-                <button className="flex items-center gap-2 pb-4 cursor-pointer">
+              {/* Button */}
+              <div className="text-primary flex gap-4">
+                <a
+                  href="about"
+                  className="flex items-center gap-2 pb-2 cursor-pointer"
+                >
                   Learn More <CgArrowLongRightL />
-                </button>
+                </a>
               </div>
             </div>
           </div>
-          {/* image */}
-          <div className="flex justify-center items-center">
+
+          {/* Image Box */}
+          <div className="flex justify-center items-center w-full p-4 border border-red-500 bg-white">
             <img
               src={logo}
               alt="5L CEO"
-              className="w-[350px] md:w-[550px] xl:w-[750px] drop-shadow-2xl border border-red-500"
+              className="w-[200px] md:w-[350px] xl:w-[450px] drop-shadow-2xl"
             />
           </div>
         </div>

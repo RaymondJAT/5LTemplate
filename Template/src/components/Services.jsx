@@ -7,39 +7,38 @@ const Services = () => {
   return (
     <>
       <section>
-        <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative border border-amber-300">
-          {/* Image */}
-          <div className="flex justify-center items-center">
+        <div className="container py-2 gap-x-2 grid grid-cols-1 md:grid-cols-2 min-h-[450px] relative border border-amber-300">
+          {/* Image Box */}
+          <div className="flex justify-center items-center w-full p-4 border border-red-500 bg-white">
             <img
               src={logo}
               alt="5L CEO"
-              className="w-[350px] md:w-[550px] xl:w-[750px] drop-shadow-2xl border border-red-500"
+              className="w-[200px] md:w-[350px] xl:w-[450px] drop-shadow-2xl"
             />
           </div>
 
-          {/* Text Content */}
-          <div className="flex flex-col justify-center py-14 md:py-0">
-            <div className="flex flex-col justify-center px-11 space-y-6 border border-blue-500">
-              <h1 className="text-3xl lg:text-4xl font-bold leading-relaxed lg:leading-normal py-1">
+          {/* Text Content Box */}
+          <div className="flex flex-col justify-center w-full p-4 md:p-8 border border-blue-500 bg-gray-50">
+            <div className="space-y-4 text-center md:text-left">
+              <h1 className="text-2xl lg:text-3xl font-bold leading-relaxed lg:leading-normal py-1">
                 Providing <span className="text-primary">High-Quality</span>{" "}
                 Services
               </h1>
-              <p className="text-justify font-bold">
+              <p className="text-justify font-bold text-sm md:text-base">
                 ⦿ Electrical Design and Installation <br />
-                <br />
                 ⦿ Installation and Repair of Surveillance Systems/CCTV <br />
-                <br />
                 ⦿ Structured Cabling Design and Installation <br />
-                <br />
-                ⦿ Supply and Installation of Air Conditioning Systems <br />
-                <br />⦿ Fire Detection and Alarm Systems
+                ⦿ Supply and Installation of Air Conditioning Systems <br />⦿
+                Fire Detection and Alarm Systems
               </p>
-
               {/* Button */}
-              <div className="text-primary flex gap-8">
-                <button className="flex items-center gap-2 pb-4 cursor-pointer">
+              <div className="text-primary flex gap-4">
+                <a
+                  href="service"
+                  className="flex items-center gap-2 pb-2 cursor-pointer"
+                >
                   See more <CgArrowLongRightL />
-                </button>
+                </a>
               </div>
             </div>
           </div>
