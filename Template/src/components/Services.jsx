@@ -1,7 +1,6 @@
 import React from "react";
-
 import logo from "../assets/5L_logo(red).png";
-import { CgArrowLongRightL } from "react-icons/cg";
+import { CgArrowLongRight } from "react-icons/cg";
 
 const Services = () => {
   return (
@@ -37,7 +36,7 @@ const Services = () => {
                   href="service"
                   className="flex items-center gap-2 pb-2 cursor-pointer"
                 >
-                  See more <CgArrowLongRightL />
+                  See more <CgArrowLongRight />
                 </a>
               </div>
             </div>

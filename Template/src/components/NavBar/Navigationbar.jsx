@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavbarLinks } from "../../Data/data";
 import ResponsiveMenu from "./ResponsiveMenu";
-
 import logo from "../../assets/5L_logo-Red.png";
 import { IoMenuSharp } from "react-icons/io5";
 

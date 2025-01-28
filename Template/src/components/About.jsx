@@ -1,7 +1,6 @@
 import React from "react";
-
 import logo from "../assets/5L_logo(red).png";
-import { CgArrowLongRightL } from "react-icons/cg";
+import { CgArrowLongRight } from "react-icons/cg";
 
 const About = () => {
   return (
@@ -33,7 +32,7 @@ const About = () => {
                   href="about"
                   className="flex items-center gap-2 pb-2 cursor-pointer"
                 >
-                  Learn More <CgArrowLongRightL />
+                  Learn More <CgArrowLongRight />
                 </a>
               </div>
             </div>
