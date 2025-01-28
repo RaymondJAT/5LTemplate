@@ -28,7 +28,7 @@ const ResponsiveMenu = ({ open, setOpen }) => {
         >
           {/* Links */}
           <div className=" text-md font-semibold  bg-primary text-white py-10 m-6 rounded-3xl">
-            <ul className="flex flex-col justify-center items-center gap-4">
+            <ul className="flex flex-col justify-center items-center gap-4 font-mono">
               {NavbarLinks.map((item) => {
                 return (
                   <li key={item.id}>

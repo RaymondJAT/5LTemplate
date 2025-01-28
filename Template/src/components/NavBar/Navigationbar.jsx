@@ -23,7 +23,7 @@ const Navigationbar = () => {
           </div>
           {/* Menu */}
           <div className="hidden md:block">
-            <ul className="flex items-center gap-10 text-sm">
+            <ul className="flex items-center gap-10 text-md font-mono">
               {NavbarLinks.map((item) => {
                 return (
                   <li key={item.id}>

@@ -6,7 +6,7 @@ import { FloatButton } from "antd";
 const Footer = () => {
   return (
     <>
-      <section className="bg-gray-100 py-4">
+      <section className="py-4">
         <div className="container mx-auto flex flex-col items-center space-y-4 text-center">
           {/* Logo */}
           <div>
@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
 
           {/* Description */}
-          <p className="text-sm max-w-md">
+          <p className="text-sm max-w-md font-mono">
             5L Solutions provides IT equipment and services, along with design,
             installation, and repair of electronic systems like CCTV, cabling,
             air conditioning, and security systems, tailored to customer needs.
@@ -35,7 +35,7 @@ const Footer = () => {
           </ul>
 
           {/* Footer Text */}
-          <div className="text-xs">
+          <div className="text-xs font-mono">
             Powered By 5L Solutions Supply's & Allied Services Corp. &copy; 2025
             All rights reserved.
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
             <FloatButton.BackTop
               type="text-primary"
               style={{
-                bottom: 50,
+                bottom: 80,
                 right: 20,
                 backgroundColor: "red",
                 color: "white",

@@ -1,15 +1,27 @@
 import React from "react";
+import background from "../assets/mainbg.png";
 import { ProductData } from "../Data/productData";
 import { Card } from "antd";
 
 const { Meta } = Card;
 
 const Products = () => {
+  const style = {
+    backgroundImage: `url(${background})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundAttachment: "inherit",
+    innerWidth: "100%",
+  };
+
   return (
     <>
-      <section>
+      <section className="bg-background" style={style}>
         <div className="container py-14">
-          <h2 className="text-3xl font-bold text-center mb-8">Products</h2>
+          <h2 className="text-3xl font-bold text-center mb-8 font-mono">
+            Products
+          </h2>
 
           {/* Products */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -30,12 +42,12 @@ const Products = () => {
                 <div className="p-4 h-32 flex flex-col items-center justify-center">
                   <Meta
                     title={
-                      <h3 className="text-xl font-semibold text-center">
+                      <h3 className="text-xl font-semibold text-center font-mono">
                         {item.title}
                       </h3>
                     }
                     description={
-                      <p className="text-sm text-center text-gray-500">
+                      <p className="text-sm text-center text-gray-500 font-mono">
                         {item.description}
                       </p>
                     }
@@ -49,7 +61,7 @@ const Products = () => {
           <div className="flex justify-center mt-8">
             <a
               href="/products"
-              className="px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-all duration-100 ease-in hover:translate-x-1 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
+              className="px-6 py-2 bg-primary text-white font-mono font-semibold rounded-lg hover:bg-primary-dark transition-all duration-100 ease-in hover:translate-x-1 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
             >
               See More
             </a>
