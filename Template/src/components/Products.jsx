@@ -8,8 +8,7 @@ const Products = () => {
   return (
     <>
       <section className="bg-slate-200">
-        <div className="container py-16">
-          {/* Header */}
+        <div className="container py-14">
           <h2 className="text-3xl font-bold text-center mb-8">Products</h2>
 
           {/* Products */}
@@ -50,7 +49,7 @@ const Products = () => {
           <div className="flex justify-center mt-8">
             <a
               href="/products"
-              className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition"
+              className="px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-all duration-200 ease-in hover:translate-x-1 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
             >
               See More
             </a>

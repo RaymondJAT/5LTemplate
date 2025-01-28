@@ -7,7 +7,7 @@ const Partners = () => {
       <section>
         <div className="container py-12">
           <h2 className="text-3xl font-bold text-center mb-8">Our Partners</h2>
-          <div className="flex flex-wrap justify-center gap-12">
+          <div className="flex flex-wrap justify-center gap-14">
             {PartnerList.map((item) => {
               return (
                 <div
