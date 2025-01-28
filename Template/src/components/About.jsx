@@ -15,11 +15,11 @@ const About = () => {
 
   return (
     <>
-      <section className="bg-background" style={style}>
+      <section style={style}>
         <div className="container pt-10 pb-2 grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Text Box */}
           <div className="flex flex-col justify-center w-full p-6 bg-gray-50 shadow-lg border border-gray-200">
-            <div className="space-y-4 text-center md:text-left">
+            <div className="space-y-15 text-center md:text-left">
               <h1 className="text-2xl lg:text-3xl font-bold leading-relaxed lg:leading-normal">
                 What is{" "}
                 <span className="text-primary font-mono">

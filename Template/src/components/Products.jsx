@@ -17,7 +17,7 @@ const Products = () => {
 
   return (
     <>
-      <section className="bg-background" style={style}>
+      <section style={style}>
         <div className="container py-14">
           <h2 className="text-3xl font-bold text-center mb-8 font-mono">
             Products
@@ -26,11 +26,7 @@ const Products = () => {
           {/* Products */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {ProductData.map((item) => (
-              <Card
-                key={item.id}
-                hoverable
-                className="rounded-xl shadow-sm border border-red-200 bg-white"
-              >
+              <Card key={item.id} hoverable className=" shadow-sm bg-white">
                 <div className="flex justify-center">
                   <img
                     src={item.image}

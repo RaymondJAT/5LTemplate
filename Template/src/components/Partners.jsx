@@ -37,7 +37,7 @@ const Partners = () => {
 
   return (
     <>
-      <section ref={sectionRef} className="bg-background py-12" style={style}>
+      <section ref={sectionRef} className="py-15" style={style}>
         <motion.div
           className="container"
           initial="hidden"

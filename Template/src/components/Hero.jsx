@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="w-full">
         <Carousel autoplay>
           {/* Slide 1 */}
-          <div className="flex justify-center items-center bg-black h-[300px] sm:h-[400px] md:h-[450px]">
+          <div className="flex justify-center items-center bg-black h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
             {/* <img
               src={logo}
               alt="5L Logo"
@@ -16,7 +16,7 @@ const Hero = () => {
             /> */}
           </div>
           {/* Slide 2 */}
-          <div className="flex justify-center items-center bg-black h-[300px] sm:h-[400px] md:h-[450px]">
+          <div className="flex justify-center items-center bg-black h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
             {/* <img
               src={logo}
               alt="5L Logo"
@@ -24,7 +24,7 @@ const Hero = () => {
             /> */}
           </div>
           {/* Slide 3 */}
-          <div className="flex justify-center items-center bg-black h-[300px] sm:h-[400px] md:h-[450px]">
+          <div className="flex justify-center items-center bg-black h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
             {/* <img
               src={logo}
               alt="5L Logo"
@@ -32,7 +32,7 @@ const Hero = () => {
             /> */}
           </div>
           {/* Slide 4 */}
-          <div className="flex justify-center items-center bg-black h-[300px] sm:h-[400px] md:h-[450px]">
+          <div className="flex justify-center items-center bg-black h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
             {/* <img
               src={logo}
               alt="5L Logo"

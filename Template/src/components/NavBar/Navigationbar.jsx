@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavbarLinks } from "../../Data/data";
 import ResponsiveMenu from "./ResponsiveMenu";
-import logo from "../../assets/5L_logo-Red.png";
+import logo from "../../assets/logo5L.png";
 import { IoMenuSharp } from "react-icons/io5";
 
 const Navigationbar = () => {
@@ -17,7 +17,7 @@ const Navigationbar = () => {
               <img
                 src={logo}
                 alt="5L Solutions logo"
-                className="cursor-pointer w-48 md:w-40 sm:w-36"
+                className="cursor-pointer w-28 h-20 md:w-30 sm:w-28"
               />
             </a>
           </div>
@@ -30,7 +30,7 @@ const Navigationbar = () => {
                     {item.id === 5 ? (
                       <a
                         href={item.path}
-                        className="px-2 py-2 bg-primary text-white rounded-md hover:bg-primary-dark transition-all duration-100 ease-in hover:translate-x-1 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
+                        className="px-2 py-2 bg-primary text-white hover:bg-primary-dark transition-all duration-100 ease-in hover:translate-x-1 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
                       >
                         {item.title}
                       </a>
