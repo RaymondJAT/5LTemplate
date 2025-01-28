@@ -1,30 +1,34 @@
 export const PartnerList = [
   {
     id: 1,
-    image: "/productImage/5L_logo(red).png",
+    image: "/partnerLogo/rui.png",
   },
   {
     id: 2,
-    image: "/productImage/5L_logo(red).png",
+    image: "/partnerLogo/ubiq.png",
   },
   {
     id: 3,
-    image: "/productImage/5L_logo(red).png",
+    image: "/partnerLogo/solis.png",
   },
   {
     id: 4,
-    image: "/productImage/5L_logo(red).png",
+    image: "/partnerLogo/cyber.png",
   },
   {
     id: 5,
-    image: "/productImage/5L_logo(red).png",
+    image: "/partnerLogo/hik.png",
   },
   {
     id: 6,
-    image: "/productImage/5L_logo(red).png",
+    image: "/partnerLogo/axis.png",
   },
   {
     id: 7,
-    image: "/productImage/5L_logo(red).png",
+    image: "/partnerLogo/dahua.png",
+  },
+  {
+    id: 8,
+    image: "/partnerLogo/unv.png",
   },
 ];

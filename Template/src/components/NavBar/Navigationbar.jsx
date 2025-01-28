@@ -30,7 +30,7 @@ const Navigationbar = () => {
                     {item.id === 5 ? (
                       <a
                         href={item.path}
-                        className="px-2 py-2 bg-primary text-white rounded-md hover:bg-primary-dark transition-all duration-200 ease-in hover:translate-x-1 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
+                        className="px-2 py-2 bg-primary text-white rounded-md hover:bg-primary-dark transition-all duration-100 ease-in hover:translate-x-1 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
                       >
                         {item.title}
                       </a>
