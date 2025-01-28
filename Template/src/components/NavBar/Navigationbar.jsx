@@ -9,8 +9,8 @@ const Navigationbar = () => {
 
   return (
     <>
-      <nav className="bg-slate-100">
-        <div className="container flex justify-between items-center py-8">
+      <nav className="sticky top-0 z-50">
+        <div className="container flex justify-between items-center py-6">
           {/* Logo */}
           <div className="text-2xl flex items-center gap-2 font-bold">
             <a href="/">
@@ -23,16 +23,25 @@ const Navigationbar = () => {
           </div>
           {/* Menu */}
           <div className="hidden md:block">
-            <ul className="flex items-center gap-6">
+            <ul className="flex items-center gap-10 text-sm">
               {NavbarLinks.map((item) => {
                 return (
                   <li key={item.id}>
-                    <a
-                      href={item.path}
-                      className="text-md inline-block py-1 px-3 hover:text-primary duration-200"
-                    >
-                      {item.title}
-                    </a>
+                    {item.id === 5 ? (
+                      <a
+                        href={item.path}
+                        className="px-2 py-2 bg-primary text-white rounded-md hover:bg-primary-dark transition-all duration-200 ease-in hover:translate-x-1 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
+                      >
+                        {item.title}
+                      </a>
+                    ) : (
+                      <a
+                        href={item.path}
+                        className="text-gray-700 hover:text-primary"
+                      >
+                        {item.title}
+                      </a>
+                    )}
                   </li>
                 );
               })}

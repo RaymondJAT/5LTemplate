@@ -6,7 +6,7 @@ import { FloatButton } from "antd";
 const Footer = () => {
   return (
     <>
-      <section className="bg-gray-800 text-white py-8">
+      <section className="bg-gray-100 py-4">
         <div className="container mx-auto flex flex-col items-center space-y-4 text-center">
           {/* Logo */}
           <div>
@@ -29,7 +29,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-xl text-white hover:text-red-600"
               >
-                <FaFacebook className="text-3xl;" />
+                <FaFacebook className="text-2xl text-primary" />
               </a>
             </li>
           </ul>

@@ -10,10 +10,7 @@ const Partners = () => {
           <div className="flex flex-wrap justify-center gap-14">
             {PartnerList.map((item) => {
               return (
-                <div
-                  key={item.id}
-                  className="flex justify-center items-center border border-red-500"
-                >
+                <div key={item.id} className="flex justify-center items-center">
                   <img
                     src={item.image}
                     alt="Partner company logo"

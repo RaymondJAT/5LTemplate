@@ -6,9 +6,9 @@ const About = () => {
   return (
     <>
       <section>
-        <div className="container py-2 gap-x-2 grid grid-cols-1 md:grid-cols-2 min-h-[450px] relative border border-solid border-amber-300">
+        <div className="container py-2 gap-x-2 grid grid-cols-1 md:grid-cols-2 min-h-[450px] relative">
           {/* Text Box */}
-          <div className="flex flex-col justify-center w-full p-4 md:p-6 border border-blue-500 bg-gray-50">
+          <div className="flex flex-col justify-center w-full p-4 md:p-6  bg-gray-50">
             <div className="space-y-4 text-center md:text-left">
               <h1 className="text-2xl lg:text-3xl font-bold leading-relaxed lg:leading-normal">
                 What is{" "}
@@ -39,7 +39,7 @@ const About = () => {
           </div>
 
           {/* Image Box */}
-          <div className="flex justify-center items-center w-full p-4 border border-red-500 bg-white">
+          <div className="flex justify-center items-center w-full p-4 bg-white">
             <img
               src={logo}
               alt="5L CEO"

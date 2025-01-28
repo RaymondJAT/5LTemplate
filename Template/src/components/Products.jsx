@@ -7,7 +7,7 @@ const { Meta } = Card;
 const Products = () => {
   return (
     <>
-      <section className="bg-slate-200">
+      <section>
         <div className="container py-14">
           <h2 className="text-3xl font-bold text-center mb-8">Products</h2>
 

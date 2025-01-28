@@ -11,7 +11,7 @@ export const NavbarLinks = [
   },
   {
     id: 3,
-    title: "Producs",
+    title: "Products",
     path: "product",
   },
   {
@@ -21,7 +21,7 @@ export const NavbarLinks = [
   },
   {
     id: 5,
-    title: "Inquire",
+    title: "Inquire Now",
     path: "contact",
   },
 ];

@@ -27,14 +27,14 @@ const ResponsiveMenu = ({ open, setOpen }) => {
           className="absolute top-23 left-0 w-full h-screen z-20  "
         >
           {/* Links */}
-          <div className=" text-md font-semibold  bg-primary text-black py-10 m-6 rounded-3xl">
+          <div className=" text-md font-semibold  bg-primary text-white py-10 m-6 rounded-3xl">
             <ul className="flex flex-col justify-center items-center gap-4">
               {NavbarLinks.map((item) => {
                 return (
                   <li key={item.id}>
                     <a
                       href={item.path}
-                      className="inline-block py-1 px-3 hover:text-white duration-200"
+                      className="inline-block py-1 px-3 hover:text-black duration-200"
                     >
                       {item.title}
                     </a>
