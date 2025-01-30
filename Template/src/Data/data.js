@@ -12,16 +12,16 @@ export const NavbarLinks = [
   {
     id: 3,
     title: "Products",
-    path: "product",
+    path: "/",
   },
   {
     id: 4,
     title: "Services",
-    path: "service",
+    path: "/",
   },
   {
     id: 5,
     title: "Inquire Now",
-    path: "contact",
+    path: "/",
   },
 ];

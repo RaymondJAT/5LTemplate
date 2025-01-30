@@ -1,6 +1,5 @@
 import React from "react";
 import { Carousel } from "antd";
-import logo from "../assets/5L_logo-Red.png";
 
 const Hero = () => {
   return (

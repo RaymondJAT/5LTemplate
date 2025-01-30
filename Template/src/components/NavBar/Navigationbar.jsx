@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavbarLinks } from "../../Data/data";
+import { NavbarLinks } from "../../data/data";
 import ResponsiveMenu from "./ResponsiveMenu";
 import logo from "../../assets/logo5L.png";
 import { IoMenuSharp } from "react-icons/io5";

@@ -1,12 +1,11 @@
 import React from "react";
-import about from "../assets/about.png";
-import logo from "../assets/5L_logo(red).png";
+import building from "../assets/building.jpg";
 import background from "../assets/background.png";
 import { motion } from "framer-motion";
 import { fade } from "../animations/variants";
 import { CgArrowLongRight } from "react-icons/cg";
 
-const About = () => {
+const AboutSection = () => {
   const style = {
     backgroundImage: `url(${background})`,
     backgroundSize: "cover",
@@ -66,11 +65,13 @@ const About = () => {
             variants={fade(0.2, "left", 150, 0.5)}
             initial="hidden"
             whileInView={"show"}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.8 }}
             viewport={{ once: true, amount: 0.7 }}
             className="flex justify-center items-center w-full p-6 bg-white shadow-lg border border-gray-200"
           >
             <motion.img
-              src={about}
+              src={building}
               alt="5L CEO"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.8 }}
@@ -83,4 +84,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutSection;

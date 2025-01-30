@@ -1,8 +1,7 @@
 import React from "react";
 import background from "../assets/mainbg.png";
 import { motion } from "framer-motion";
-import { fade } from "../animations/variants";
-import { PartnerList } from "../Data/partnerData";
+import { PartnerList } from "../data/partnerData";
 
 const Partners = () => {
   const style = {
@@ -19,7 +18,7 @@ const Partners = () => {
       <section className="py-15" style={style}>
         <div className="container mx-auto px-4">
           {/* Section Title */}
-          <h2 className="text-3xl font-bold text-center font-mono">
+          <h2 className="text-3xl font-bold text-center mb-2 font-mono">
             Our Partners
           </h2>
 
