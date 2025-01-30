@@ -1,6 +1,9 @@
 import React from "react";
+import about from "../assets/about.png";
 import logo from "../assets/5L_logo(red).png";
 import background from "../assets/background.png";
+import { motion } from "framer-motion";
+import { fade } from "../animations/variants";
 import { CgArrowLongRight } from "react-icons/cg";
 
 const About = () => {
@@ -18,9 +21,19 @@ const About = () => {
       <section style={style}>
         <div className="container pt-10 pb-2 grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Text Box */}
-          <div className="flex flex-col justify-center w-full p-6 bg-gray-50 shadow-lg border border-gray-200">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, amount: 0.7 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="flex flex-col justify-center w-full p-12 bg-gray-50 shadow-lg border border-gray-200"
+          >
             <div className="space-y-15 text-center md:text-left">
-              <h1 className="text-2xl lg:text-3xl font-bold leading-relaxed lg:leading-normal">
+              <h1 className="text-2xl lg:text-3xl font-bold leading-relaxed lg:leading-8">
                 What is{" "}
                 <span className="text-primary font-mono">
                   5L Solutions Supply & Allied Service Corp.
@@ -46,16 +59,24 @@ const About = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Image Box */}
-          <div className="flex justify-center items-center w-full p-6 bg-white shadow-lg border border-gray-200">
-            <img
-              src={logo}
+          <motion.div
+            variants={fade(0.2, "left", 150, 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="flex justify-center items-center w-full p-6 bg-white shadow-lg border border-gray-200"
+          >
+            <motion.img
+              src={about}
               alt="5L CEO"
-              className="w-[200px] md:w-[350px] xl:w-[450px] drop-shadow-2xl"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8 }}
+              className="w-[450px] md:w-[550px] xl:w-[750px] drop-shadow-2xl"
             />
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

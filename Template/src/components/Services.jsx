@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "../assets/5L_logo(red).png";
 import background from "../assets/try.png";
+import { motion } from "framer-motion";
+import { fade } from "../animations/variants";
 import { CgArrowLongRight } from "react-icons/cg";
 
 const Services = () => {
@@ -18,27 +20,48 @@ const Services = () => {
       <section style={style}>
         <div className="container pb-2 grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Image Box */}
-          <div className="flex justify-center items-center w-full p-6 bg-white shadow-lg border border-gray-200">
-            <img
+          <motion.div
+            variants={fade(0.2, "right", 150, 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="flex justify-center items-center w-full p-6 bg-white shadow-lg border border-gray-200"
+          >
+            <motion.img
               src={logo}
               alt="5L CEO"
-              className="w-[200px] md:w-[350px] xl:w-[450px] drop-shadow-2xl"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8 }}
+              className="w-[450px] md:w-[550px] xl:w-[750px] drop-shadow-2xl"
             />
-          </div>
+          </motion.div>
 
           {/* Text Box */}
-          <div className="flex flex-col justify-center w-full p-6 bg-gray-50 shadow-lg border border-gray-200">
-            <div className="space-y-25 text-center md:text-left ">
-              <h1 className="text-2xl lg:text-3xl font-bold leading-relaxed lg:leading-normal py-1 font-mono">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, amount: 0.7 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="flex flex-col justify-center w-full p-12 bg-gray-50 shadow-lg border border-gray-200"
+          >
+            <div className="space-y-15 text-center md:text-left ">
+              <h1 className="text-2xl lg:text-3xl font-bold leading-relaxed lg:leading-8 py-1 font-mono tracking-tight">
                 Providing <span className="text-primary">High-Quality</span>{" "}
                 Services
               </h1>
               <p className="text-justify font-bold text-sm md:text-base font-mono">
                 ⦿ Electrical Design and Installation <br />
+                <br />
                 ⦿ Installation and Repair of Surveillance Systems/CCTV <br />
+                <br />
                 ⦿ Structured Cabling Design and Installation <br />
-                ⦿ Supply and Installation of Air Conditioning Systems <br />⦿
-                Fire Detection and Alarm Systems
+                <br />
+                ⦿ Supply and Installation of Air Conditioning Systems <br />
+                <br />⦿ Fire Detection and Alarm Systems
               </p>
               {/* Button */}
               <div className="text-primary flex gap-4">
@@ -50,7 +73,7 @@ const Services = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

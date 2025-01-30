@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import background from "../assets/mainbg.png";
 import { ProductData } from "../Data/productData";
 import { Card } from "antd";
@@ -28,9 +29,11 @@ const Products = () => {
             {ProductData.map((item) => (
               <Card key={item.id} hoverable className=" shadow-sm bg-white">
                 <div className="flex justify-center">
-                  <img
+                  <motion.img
                     src={item.image}
                     alt={item.title}
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.6 }}
                     className="w-full h-auto object-cover rounded-t-xl max-w-[200px] sm:max-w-[250px] md:max-w-full"
                   />
                 </div>
@@ -57,7 +60,7 @@ const Products = () => {
           <div className="flex justify-center mt-8">
             <a
               href="/products"
-              className="px-6 py-2 bg-primary text-white font-mono font-semibold rounded-lg hover:bg-primary-dark transition-all duration-100 ease-in hover:translate-x-1 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
+              className="px-6 py-2 bg-primary text-white font-mono font-semibold rounded-sm hover:bg-primary-dark transition-all duration-100 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
             >
               See More
             </a>
