@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { NavbarLinks } from "../../data/data";
 import ResponsiveMenu from "./ResponsiveMenu";
 import logo from "../../assets/logo5L.png";
@@ -31,7 +32,7 @@ const Navigationbar = () => {
         <div className="container flex justify-between items-center transition-all duration-300">
           {/* Logo */}
           <div className="text-2xl flex items-center gap-2 font-bold transition-all duration-300">
-            <a href="/">
+            <Link to="/">
               <img
                 src={logo}
                 alt="5L Solutions logo"
@@ -39,7 +40,7 @@ const Navigationbar = () => {
                   isScrolled ? "w-20 h-14" : "w-28 h-20"
                 }`}
               />
-            </a>
+            </Link>
           </div>
 
           {/* Menu */}
@@ -49,12 +50,12 @@ const Navigationbar = () => {
                 return (
                   <li key={item.id}>
                     {item.id === 5 ? (
-                      <a
-                        href={item.path}
+                      <Link
+                        to={item.path}
                         className="px-2 py-3 bg-primary text-white font-mono font-semibold rounded-sm hover:bg-primary-dark transition-all duration-100 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
                       >
                         {item.title}
-                      </a>
+                      </Link>
                     ) : (
                       <a
                         href={item.path}

@@ -4,6 +4,7 @@ import background from "../assets/background.png";
 import { motion } from "framer-motion";
 import { fade } from "../animations/variants";
 import { CgArrowLongRight } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   const style = {
@@ -50,12 +51,12 @@ const AboutSection = () => {
               </p>
               {/* Button */}
               <div className="text-primary flex gap-4">
-                <a
-                  href="about"
+                <Link
+                  to="/about"
                   className="flex items-center gap-2 pb-2 cursor-pointer font-mono"
                 >
                   Learn More <CgArrowLongRight />
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>

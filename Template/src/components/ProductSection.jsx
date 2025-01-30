@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import background from "../assets/mainbg.png";
 import { ProductData } from "../data/productData";
 import { Card } from "antd";
+import { Link } from "react-router-dom";
 
 const { Meta } = Card;
 
@@ -58,12 +59,12 @@ const Products = () => {
 
           {/* button */}
           <div className="flex justify-center mt-8">
-            <a
-              href="/products"
+            <Link
+              to="/product"
               className="px-6 py-2 bg-primary text-white font-mono font-semibold rounded-sm hover:bg-primary-dark transition-all duration-100 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
             >
               See More
-            </a>
+            </Link>
           </div>
         </div>
       </section>
