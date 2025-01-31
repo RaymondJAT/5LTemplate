@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { NavbarLinks } from "../../Data/data";
+import { NavbarLinks } from "../../data/data";
 
 const ResponsiveMenu = ({ open, setOpen }) => {
   useEffect(() => {
