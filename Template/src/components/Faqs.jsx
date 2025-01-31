@@ -14,7 +14,7 @@ const Faqs = () => {
               key={item.key}
               className="font-semibold"
             >
-              <p className="font-normal">{item.children}</p>
+              <p className="font-normal">{item.description}</p>
             </Collapse.Panel>
           ))}
         </Collapse>

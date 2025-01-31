@@ -1,4 +1,5 @@
 import React from "react";
+import background from "../assets/mainbg.png";
 import Navigationbar from "../components/NavBar/Navigationbar";
 import Header from "../components/Header";
 import Faqs from "../components/Faqs";
@@ -7,9 +8,18 @@ import Footer from "../components/Footer";
 import DragCards from "../components/dragCard/DragCards";
 
 const About = () => {
+  const style = {
+    backgroundImage: `url(${background})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundAttachment: "inherit",
+    innerWidth: "100%",
+  };
+
   return (
     <>
-      <section>
+      <section style={style}>
         <Navigationbar />
         <Header title="Who we are" />
         <div className="container pt-10 pb-2 grid grid-cols-1 md:grid-cols-2 gap-4">
