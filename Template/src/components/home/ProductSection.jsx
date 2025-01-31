@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import background from "../assets/mainbg.png";
-import { ProductData } from "../data/productData";
+import background from "../../assets/mainbg.png";
+import { ProductData } from "../../data/productData";
 import { Card } from "antd";
 import { Link } from "react-router-dom";
 

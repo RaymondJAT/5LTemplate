@@ -1,8 +1,8 @@
 import React from "react";
-import building from "../assets/building.jpg";
-import background from "../assets/try.png";
+import building from "../../assets/building.jpg";
+import background from "../../assets/try.png";
 import { motion } from "framer-motion";
-import { fade } from "../animations/variants";
+import { fade } from "../../animations/variants";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Link } from "react-router-dom";
 

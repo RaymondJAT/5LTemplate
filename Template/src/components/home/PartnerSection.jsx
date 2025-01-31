@@ -1,7 +1,7 @@
 import React from "react";
-import background from "../assets/mainbg.png";
+import background from "../../assets/mainbg.png";
 import { motion } from "framer-motion";
-import { PartnerList } from "../data/partnerData";
+import { PartnerList } from "../../data/partnerData";
 
 const Partners = () => {
   const style = {

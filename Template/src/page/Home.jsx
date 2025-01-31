@@ -1,9 +1,9 @@
 import React from "react";
-import Hero from "../components/Hero";
-import AboutSection from "../components/AboutSection";
-import ServiceSection from "../components/ServiceSection";
-import ProductSection from "../components/ProductSection";
-import PartnerSection from "../components/PartnerSection";
+import Hero from "../components/home/Hero";
+import AboutSection from "../components/home/AboutSection";
+import ServiceSection from "../components/home/ServiceSection";
+import ProductSection from "../components/home/ProductSection";
+import PartnerSection from "../components/home/PartnerSection";
 import Footer from "../components/Footer";
 import Navigationbar from "../components/NavBar/Navigationbar";
 
