@@ -70,7 +70,7 @@ const Services = () => {
               <div className="text-primary flex gap-4">
                 <Link
                   to="/service"
-                  className="flex items-center gap-2 pb-2 cursor-pointer font-mono"
+                  className="flex items-center gap-2 pb-2 cursor-pointer font-mono hover:text-black duration-200"
                 >
                   See more <CgArrowLongRight />
                 </Link>

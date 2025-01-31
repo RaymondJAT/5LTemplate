@@ -61,7 +61,7 @@ const Products = () => {
           <div className="flex justify-center mt-8">
             <Link
               to="/product"
-              className="px-6 py-2 bg-primary text-white font-mono font-semibold rounded-sm hover:bg-primary-dark transition-all duration-100 hover:border-2 hover:border-solid hover:border-red-600 hover:bg-transparent hover:text-black"
+              className="px-5 py-2 text-sm font-medium bg-primary text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
             >
               See More
             </Link>
