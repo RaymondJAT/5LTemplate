@@ -13,7 +13,7 @@ const Header = ({ title }) => {
     <>
       <section>
         <div
-          className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 pt-32 md:pt-48 pb-6 md:pb-10"
+          className="w-full pt-32 md:pt-48 pb-6 md:pb-10"
           style={headerStyle}
         >
           <div className="container">

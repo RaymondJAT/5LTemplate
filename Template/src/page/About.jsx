@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Faqs from "../components/Faqs";
 import ceo from "../assets/5L-ceo.jpg";
 import Footer from "../components/Footer";
+import DragCards from "../components/dragCard/DragCards";
 
 const About = () => {
   return (
@@ -46,6 +47,11 @@ const About = () => {
               className="w-[450px] md:w-[550px] xl:w-[750px] h-auto max-h-[600px] object-cover drop-shadow-2xl"
             />
           </div>
+        </div>
+
+        {/* Cards Section */}
+        <div className="container flex justify-center">
+          <DragCards />
         </div>
         <Faqs />
         <Footer />

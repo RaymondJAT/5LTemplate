@@ -53,7 +53,27 @@ const Services = () => {
           >
             <div className="space-y-15 text-center md:text-left ">
               <h1 className="text-2xl lg:text-3xl font-bold leading-relaxed lg:leading-8 py-1 font-mono tracking-tight">
-                Providing <span className="text-primary">High-Quality</span>{" "}
+                Providing{" "}
+                <span className="text-primary relative">
+                  High-Quality
+                  <svg
+                    viewBox="0 0 286 73"
+                    fill="none"
+                    className="absolute inset-0 -translate-y-1 w-full h-full scale-140"
+                  >
+                    <motion.path
+                      initial={{ pathLength: 0 }}
+                      whileInView={{ pathLength: 1 }}
+                      transition={{
+                        duration: 2.25,
+                        ease: "easeInOut",
+                      }}
+                      d="M142.293 1C106.854 16.8908 6.08202 7.17705 1.23654 43.3756C-2.10604 68.3466 29.5633 73.2652 122.688 71.7518C215.814 70.2384 316.298 70.689 275.761 38.0785C230.14 1.37835 97.0503 24.4575 52.9384 1"
+                      stroke="#000000"
+                      strokeWidth="3"
+                    />
+                  </svg>
+                </span>{" "}
                 Services
               </h1>
               <p className="text-justify font-bold text-sm md:text-base font-mono">
