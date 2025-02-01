@@ -12,7 +12,7 @@ const Faqs = () => {
             <Collapse.Panel
               header={item.label}
               key={item.key}
-              className="font-semibold"
+              className="font-semibold font-mono"
             >
               <p className="font-normal">{item.description}</p>
             </Collapse.Panel>

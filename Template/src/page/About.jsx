@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Faqs from "../components/Faqs";
 import ceo from "../assets/5L-ceo.jpg";
 import Footer from "../components/Footer";
-import DragCards from "../components/dragCard/DragCards";
+import ImageBento from "../components/ImageBento";
 
 const About = () => {
   const style = {
@@ -59,9 +59,9 @@ const About = () => {
           </div>
         </div>
 
-        {/* Cards Section */}
+        {/* Gallery Section */}
         <div className="container flex justify-center">
-          <DragCards />
+          <ImageBento />
         </div>
         <Faqs />
         <Footer />
