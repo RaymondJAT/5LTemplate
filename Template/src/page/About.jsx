@@ -6,6 +6,7 @@ import Faqs from "../components/Faqs";
 import ceo from "../assets/5L-ceo.jpg";
 import Footer from "../components/Footer";
 import ImageBento from "../components/ImageBento";
+import CoreValues from "../components/CoreValues";
 
 const About = () => {
   const style = {
@@ -27,7 +28,7 @@ const About = () => {
           <div className="flex flex-col justify-center w-full p-12 bg-gray-50 shadow-lg border border-gray-200">
             <div className="space-y-15 text-center md:text-left">
               <h1 className="text-2xl text-primary lg:text-3xl font-mono font-bold leading-relaxed lg:leading-8">
-                5L Solutions Supply & Allied Service Corp.
+                5L Solutions Supply & Allied Services Corp.
               </h1>
               <p className="text-justify font-mono">
                 The company was incorporated on September 29, 2015. Although
@@ -63,6 +64,9 @@ const About = () => {
         <div className="container flex justify-center">
           <ImageBento />
         </div>
+        {/* coere value section */}
+        <CoreValues />
+        {/* faq section */}
         <Faqs />
         <Footer />
       </section>

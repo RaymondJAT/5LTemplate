@@ -33,10 +33,10 @@ const AboutSection = () => {
             className="flex flex-col justify-center w-full p-12 bg-gray-50 shadow-lg border border-gray-200"
           >
             <div className="space-y-15 text-center md:text-left">
-              <h1 className="text-2xl lg:text-3xl font-bold leading-relaxed lg:leading-8">
+              <h1 className="text-2xl lg:text-3xl font-bold font-mono leading-relaxed lg:leading-8">
                 What is{" "}
                 <span className="text-primary font-mono">
-                  5L Solutions Supply & Allied Service Corp.
+                  5L Solutions Supply & Allied Services Corp.
                 </span>
                 ?{" "}
               </h1>
