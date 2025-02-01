@@ -7,7 +7,7 @@ import fam from "../assets/fam.jpg";
 
 const ImageBento = () => {
   return (
-    <div className="flex flex-col justify-center w-full bg-gray-50 shadow-lg border border-gray-200">
+    <div className="flex flex-col justify-center w-full bg-gray-50 shadow-lg border border-gray-200 rounded-sm">
       <motion.div
         initial="initial"
         animate="animate"
@@ -18,23 +18,23 @@ const ImageBento = () => {
       >
         <ImageBlock
           src={owner}
-          className="col-span-12 row-span-2 md:col-span-6"
+          className="col-span-12 row-span-2 md:col-span-6 rounded-sm"
           alt="random picture"
         />
         <ImageBlock
           src={fam}
-          className="col-span-6 md:col-span-3"
+          className="col-span-6 md:col-span-3 rounded-sm"
           alt="random picture"
         />
         <ImageBlock
           src={hooman}
-          className="col-span-6 md:col-span-3"
+          className="col-span-6 md:col-span-3 rounded-sm"
           alt="random picture"
         />
-        {/* Company image now takes the place of RandD and White */}
+
         <ImageBlock
           src={company}
-          className="col-span-12 md:col-span-6"
+          className="col-span-12 md:col-span-6 rounded-sm"
           alt="random picture"
         />
       </motion.div>

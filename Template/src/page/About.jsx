@@ -25,7 +25,7 @@ const About = () => {
         <Header title="Who we are" />
         <div className="container pt-10 pb-2 grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Text Box */}
-          <div className="flex flex-col justify-center w-full p-12 bg-gray-50 shadow-lg border border-gray-200">
+          <div className="flex flex-col justify-center w-full p-12 bg-gray-50 shadow-lg border border-gray-200 rounded-sm">
             <div className="space-y-15 text-center md:text-left">
               <h1 className="text-2xl text-primary lg:text-3xl font-mono font-bold leading-relaxed lg:leading-8">
                 5L Solutions Supply & Allied Services Corp.
@@ -51,11 +51,11 @@ const About = () => {
           </div>
 
           {/* Image Box */}
-          <div className="flex justify-center items-center w-full p-6 bg-white shadow-lg border border-gray-200">
+          <div className="flex justify-center items-center w-full p-6 bg-white shadow-lg border border-gray-200 rounded-sm">
             <img
               src={ceo}
               alt="5L CEO"
-              className="w-[450px] md:w-[550px] xl:w-[750px] h-auto max-h-[600px] object-cover drop-shadow-2xl"
+              className="w-[450px] md:w-[550px] xl:w-[750px] h-auto max-h-[600px] object-cover drop-shadow-2xl rounded-sm"
             />
           </div>
         </div>
@@ -64,7 +64,7 @@ const About = () => {
         <div className="container flex justify-center">
           <ImageBento />
         </div>
-        {/* coere value section */}
+        {/* core value section */}
         <CoreValues />
         {/* faq section */}
         <Faqs />

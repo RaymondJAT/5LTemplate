@@ -13,9 +13,9 @@ export const faqData = [
   },
   {
     key: "2",
-    label: "How do I request a service or qoute from 5L Solutions?",
+    label: "How do I request a service or quote from 5L Solutions?",
     description:
-      "You can easily request a service or quote by contacting us via our website, email, or phone. Our customer support team will be happy to discuss your needs and provide you with a quote based on your requirements",
+      "You can easily request a service or quote by contacting us via our website, email, or phone. Our customer support team will be happy to discuss your needs and provide you with a quote based on your requirements.",
   },
   {
     key: "4",
