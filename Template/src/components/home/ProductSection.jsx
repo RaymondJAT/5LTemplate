@@ -47,7 +47,7 @@ const Products = () => {
                       </h3>
                     }
                     description={
-                      <p className="text-sm text-center text-gray-500 font-mono">
+                      <p className="text-sm text-center text-black font-mono">
                         {item.description}
                       </p>
                     }

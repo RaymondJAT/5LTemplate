@@ -15,13 +15,13 @@ const Contact = () => {
       <div className="container py-12 mx-auto grid grid-cols-12 gap-8">
         {/* Contact Form */}
         <div className="col-span-12 md:col-span-8 bg-white p-8 shadow-md rounded-sm border border-gray-200">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-6">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-6 font-mono">
             Send a Message
           </h3>
           <form action="">
             <div className="space-y-6">
               <div>
-                <label htmlFor="full-name" className="font-medium">
+                <label htmlFor="full-name" className="font-medium font-mono">
                   Full Name
                 </label>
                 <input
@@ -30,13 +30,13 @@ const Contact = () => {
                   name="full-name"
                   placeholder="Full Name"
                   autoComplete="name"
-                  className="p-4 text-sm outline-none w-full border border-gray-300 rounded-sm placeholder:text-gray-500"
+                  className="p-4 text-sm outline-none w-full border border-gray-300 rounded-sm placeholder:text-gray-500 font-mono"
                 />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="company" className="font-medium">
+                  <label htmlFor="company" className="font-medium font-mono">
                     Company
                   </label>
                   <input
@@ -45,11 +45,14 @@ const Contact = () => {
                     name="company"
                     placeholder="Company Name"
                     autoComplete="organization"
-                    className="p-4 text-sm outline-none w-full border border-gray-300 rounded-sm placeholder:text-gray-500"
+                    className="p-4 text-sm outline-none w-full border border-gray-300 rounded-sm placeholder:text-gray-500 font-mono"
                   />
                 </div>
                 <div>
-                  <label htmlFor="contact-number" className="font-medium">
+                  <label
+                    htmlFor="contact-number"
+                    className="font-medium font-mono"
+                  >
                     Contact Number
                   </label>
                   <input
@@ -58,13 +61,13 @@ const Contact = () => {
                     name="contact-number"
                     placeholder="Contact Number"
                     autoComplete="tel"
-                    className="p-4 text-sm outline-none w-full border border-gray-300 rounded-sm placeholder:text-gray-500"
+                    className="p-4 text-sm outline-none w-full border border-gray-300 rounded-sm placeholder:text-gray-500 font-mono"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="email" className="font-medium">
+                <label htmlFor="email" className="font-medium font-mono">
                   Email
                 </label>
                 <input
@@ -73,12 +76,12 @@ const Contact = () => {
                   name="email"
                   placeholder="Email Address"
                   autoComplete="email"
-                  className="p-4 text-sm outline-none w-full border border-gray-300 rounded-sm placeholder:text-gray-500"
+                  className="p-4 text-sm outline-none w-full border border-gray-300 rounded-sm placeholder:text-gray-500 font-mono"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="font-medium">
+                <label htmlFor="message" className="font-medium font-mono">
                   Message
                 </label>
                 <textarea
@@ -86,15 +89,15 @@ const Contact = () => {
                   name="message"
                   placeholder="Write your message here..."
                   autoComplete="off"
-                  className="p-4 w-full text-sm outline-none border border-gray-300 rounded-sm placeholder:text-gray-500 resize-none min-h-40"
+                  className="p-4 w-full text-sm outline-none border border-gray-300 rounded-sm placeholder:text-gray-500 resize-none min-h-40 font-mono"
                 ></textarea>
               </div>
 
-              <div className="text-center">
+              <div className="text-center font-mono">
                 <input
                   type="submit"
                   value="Send Message"
-                  className="bg-black text-white border-none text-sm font-semibold cursor-pointer py-3 px-6 rounded-sm w-full mt-5 hover:bg-gray-800 transition"
+                  className="px-12 py-2 text-sm font-medium bg-primary text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] cursor-pointer"
                 />
               </div>
             </div>
@@ -105,13 +108,13 @@ const Contact = () => {
           {/* Contact Info Box */}
           <div className="bg-white p-8 shadow-md rounded-sm border border-gray-200 flex-1 flex flex-col justify-between min-h-[256px]">
             <div className="space-y-5">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-8">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-8 font-mono">
                 Contact Info
               </h3>
               {contactInfo.map((item) => (
                 <div key={item.id} className="flex items-center space-x-3">
                   <span className="text-black text-2xl">{item.icon}</span>
-                  <p className="text-sm md:text-base text-gray-700">
+                  <p className="text-sm md:text-base text-gray-700 font-mono">
                     {item.text}
                   </p>
                 </div>
